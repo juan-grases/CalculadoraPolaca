@@ -85,6 +85,7 @@ public class Operaciones {
     
 /**************************** VALIDACIONES ************************************/
     
+
     //Metodo para comprobar si es un parentesis izquierdo
     public boolean EsParentesisIzq(String caracter) throws Exception{
         if(caracter == "(") {
@@ -106,14 +107,16 @@ public class Operaciones {
     //Metodo para comprobar si es un operador
     public boolean EsOperador(String caracter) throws Exception{
         if(caracter == "+" || caracter == "-" || caracter == "*" || caracter == "/" || 
-                caracter == "x" || caracter == "y" || caracter == "z") {
+                caracter == "s" || caracter == "e" || caracter == "n" ||
+                caracter == "c" || caracter == "o" || caracter == "t" || 
+                caracter == "a" || caracter == "g") {
            return true;
         }else{
             return false;
         }
-    }
+    } 
     
-    //
+    //Metodo para comprobar si es un numero
     public boolean EsNumero(String caracter) throws Exception{
         if (caracter == "0" || caracter == "1" || caracter == "2" || caracter == "3"
                 || caracter == "4" || caracter == "5" || caracter == "6"
@@ -124,7 +127,7 @@ public class Operaciones {
         }
     }
     
-    //
+    //Metodo que da la Prioridad de las operaciones
     public int Prioridad(char caracter) {
         if (caracter == '*' || caracter == '/') {
             return 2;

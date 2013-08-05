@@ -621,6 +621,7 @@ public class Calculadora extends javax.swing.JFrame {
     //Meotdo que recibe un valor por parametro y lo mustre en pantalla al presionar el boton
     private void NumeroPantalla(String valor) {
         TxtPantalla.setText(TxtPantalla.getText() + valor);
+        BtnIgual.setEnabled(true);
     }
 }
 
